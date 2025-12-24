@@ -28,7 +28,7 @@ export default function PoliciaLayout() {
         tabBarInactiveTintColor: 'white',
         tabBarStyle: {
           backgroundColor: '#2E4A28',
-          height: 98,
+          height: 65,
           paddingBottom: 10,
         },
         tabBarLabelStyle: {
