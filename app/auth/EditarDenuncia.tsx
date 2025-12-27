@@ -53,7 +53,8 @@ const EditarDenunciaScreen = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   // --- CONFIGURACIÓN HEROKU ---
-  const API_BASE = 'https://safe-city.herokuapp.com';
+  const API_BASE = 'https://safe-city-1acefa1f4310.herokuapp.com';
+  
   
   const API_URL_GET_DENUNCIA = `${API_BASE}/denuncia/${idDenuncia}`;
   const API_URL_UPDATE_DENUNCIA = `${API_BASE}/denuncia/${idDenuncia}`;
