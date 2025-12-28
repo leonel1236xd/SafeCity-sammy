@@ -151,7 +151,7 @@ const RegistroPolicia = () => {
 
           {/* Campos de Texto */}
           <View style={styles.inputGroup}>
-            <Text style={styles.label}>Nombres</Text>
+            <Text style={styles.label}>Nombres *</Text>
             <TextInput
               style={styles.input}
               placeholder="Ej: Juan Carlos"
@@ -162,19 +162,19 @@ const RegistroPolicia = () => {
 
           <View style={styles.row}>
             <View style={[styles.inputGroup, { flex: 1, marginRight: 10 }]}>
-              <Text style={styles.label}>Apellido Paterno</Text>
+              <Text style={styles.label}>Apellido Paterno *</Text>
               <TextInput
                 style={styles.input}
-                placeholder="Pérez"
+                placeholder="Ej: Pérez"
                 value={apellidoPaterno}
                 onChangeText={setApellidoPaterno}
               />
             </View>
             <View style={[styles.inputGroup, { flex: 1 }]}>
-              <Text style={styles.label}>Apellido Materno</Text>
+              <Text style={styles.label}>Apellido Materno *</Text>
               <TextInput
                 style={styles.input}
-                placeholder="Gómez"
+                placeholder="Ej: Gómez"
                 value={apellidoMaterno}
                 onChangeText={setApellidoMaterno}
               />
@@ -182,10 +182,10 @@ const RegistroPolicia = () => {
           </View>
 
           <View style={styles.inputGroup}>
-            <Text style={styles.label}>Correo Institucional</Text>
+            <Text style={styles.label}>Correo *</Text>
             <TextInput
               style={styles.input}
-              placeholder="oficial@policia.bo"
+              placeholder="Ej: oficial12@policia.bo"
               keyboardType="email-address"
               autoCapitalize="none"
               value={correo}
@@ -195,7 +195,7 @@ const RegistroPolicia = () => {
 
           {/* Selector EPI */}
           <View style={styles.inputGroup}>
-            <Text style={styles.label}>Módulo EPI</Text>
+            <Text style={styles.label}>Módulo EPI *</Text>
             <TouchableOpacity 
               style={styles.dropdownButton} 
               onPress={() => setShowModulos(!showModulos)}
@@ -225,7 +225,7 @@ const RegistroPolicia = () => {
           </View>
 
           <View style={styles.inputGroup}>
-            <Text style={styles.label}>Contraseña</Text>
+            <Text style={styles.label}>Contraseña *</Text>
             <TextInput
               style={styles.input}
               placeholder="••••••••"
@@ -236,7 +236,7 @@ const RegistroPolicia = () => {
           </View>
 
           <View style={styles.inputGroup}>
-            <Text style={styles.label}>Confirmar Contraseña</Text>
+            <Text style={styles.label}>Confirmar Contraseña *</Text>
             <TextInput
               style={styles.input}
               placeholder="••••••••"
@@ -254,7 +254,7 @@ const RegistroPolicia = () => {
             {loading ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={styles.registerButtonText}>Registrar Oficial</Text>
+              <Text style={styles.registerButtonText}>Registrar Policía</Text>
             )}
           </TouchableOpacity>
         </View>
